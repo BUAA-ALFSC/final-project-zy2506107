@@ -7,3 +7,10 @@
 【链接】：https://gitcode.com/cann/ops-math/issues/1461
 
 截图见https://github.com/BUAA-ALFSC/final-project-zy2506107/blob/main/image.png
+
+【学号】：ZY2506136
+【成员】：pluttato
+【作业任务】：Comment
+【链接】：https://gitcode.com/cann/pypto/issues/1173?ref=&did=8fd1bfcccc132561fc45c507112977947eba7089#tid-170206576
+
+截图见https://github.com/BUAA-ALFSC/final-project-zy2506107/blob/main/ScreenShot_2026-05-05_170027_161.png
