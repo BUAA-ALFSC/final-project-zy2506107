@@ -1,0 +1,894 @@
+INFO:absl:Best score of island 0 increased to -500.0
+INFO:absl:Best score of island 1 increased to -500.0
+INFO:absl:Best score of island 2 increased to -500.0
+INFO:absl:Best score of island 3 increased to -500.0
+INFO:absl:Best score of island 4 increased to -500.0
+INFO:absl:Best score of island 5 increased to -500.0
+INFO:absl:Best score of island 6 increased to -500.0
+INFO:absl:Best score of island 7 increased to -500.0
+INFO:absl:Best score of island 8 increased to -500.0
+INFO:absl:Best score of island 9 increased to -500.0
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    ratios = item / bins
+    log_ratios = np.log(ratios)
+    priorities = -log_ratios
+    return priorities
+------------------------------------------------------
+Score        : -500.0
+Sample time  : None
+Evaluate time: 1.9251899719238281
+Sample orders: None
+======================================================
+
+
+INFO:absl:Best score of island 1 increased to -212.8
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    # noqa: D205
+    priorities = np.zeros_like(bins)
+    for i, bin in enumerate(bins):
+        if bin > item:
+            priorities[i] = -np.log(bin / item)
+        else:
+            priorities[i] = 0
+    return priorities
+------------------------------------------------------
+Score        : -212.8
+Sample time  : 2.221860885620117
+Evaluate time: 1.7687420845031738
+Sample orders: 2
+======================================================
+
+
+INFO:absl:Best score of island 1 increased to -212.0
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 0.5737476348876953
+Evaluate time: 1.4208533763885498
+Sample orders: 3
+======================================================
+
+
+INFO:absl:Best score of island 8 increased to -212.8
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    # noqa: D205
+    priorities = np.zeros_like(bins)
+    for i, bin in enumerate(bins):
+        if bin > item:
+            priorities[i] = -np.log(bin / item)
+        else:
+            priorities[i] = 0
+    return priorities
+------------------------------------------------------
+Score        : -212.8
+Sample time  : 2.227876663208008
+Evaluate time: 1.6670331954956055
+Sample orders: 4
+======================================================
+
+
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 1.941735029220581
+Evaluate time: 1.5469989776611328
+Sample orders: 5
+======================================================
+
+
+INFO:absl:Best score of island 8 increased to -212.0
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 0.5697238445281982
+Evaluate time: 1.4259707927703857
+Sample orders: 6
+======================================================
+
+
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 1.95682954788208
+Evaluate time: 1.4725687503814697
+Sample orders: 7
+======================================================
+
+
+INFO:absl:Best score of island 6 increased to -212.8
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    # noqa: D205
+    priorities = np.zeros_like(bins)
+    for i, bin in enumerate(bins):
+        if bin > item:
+            priorities[i] = -np.log(bin / item)
+        else:
+            priorities[i] = 0
+    return priorities
+------------------------------------------------------
+Score        : -212.8
+Sample time  : 2.3828306198120117
+Evaluate time: 1.635361671447754
+Sample orders: 8
+======================================================
+
+
+INFO:absl:Best score of island 5 increased to -212.8
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    # noqa: D205
+    priorities = np.zeros_like(bins)
+    for i, bin in enumerate(bins):
+        if bin > item:
+            priorities[i] = -np.log(bin / item)
+        else:
+            priorities[i] = 0
+    return priorities
+------------------------------------------------------
+Score        : -212.8
+Sample time  : 2.285712718963623
+Evaluate time: 1.7031099796295166
+Sample orders: 9
+======================================================
+
+
+INFO:absl:Best score of island 4 increased to -212.8
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    # noqa: D205
+    priorities = np.zeros_like(bins)
+    for i, bin in enumerate(bins):
+        if bin > item:
+            priorities[i] = -np.log(bin / item)
+        else:
+            priorities[i] = 0
+    return priorities
+------------------------------------------------------
+Score        : -212.8
+Sample time  : 2.605924606323242
+Evaluate time: 1.6834635734558105
+Sample orders: 10
+======================================================
+
+
+INFO:absl:Best score of island 2 increased to -212.8
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    # noqa: D205
+    priorities = np.zeros_like(bins)
+    for i, bin in enumerate(bins):
+        if bin > item:
+            priorities[i] = -np.log(bin / item)
+        else:
+            priorities[i] = 0
+    return priorities
+------------------------------------------------------
+Score        : -212.8
+Sample time  : 2.2585289478302
+Evaluate time: 1.6437208652496338
+Sample orders: 11
+======================================================
+
+
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 2.0769331455230713
+Evaluate time: 1.4203641414642334
+Sample orders: 12
+======================================================
+
+
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 1.9293181896209717
+Evaluate time: 1.4671721458435059
+Sample orders: 13
+======================================================
+
+
+INFO:absl:Best score of island 0 increased to -212.8
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    # noqa: D205
+    priorities = np.zeros_like(bins)
+    for i, bin in enumerate(bins):
+        if bin > item:
+            priorities[i] = -np.log(bin / item)
+        else:
+            priorities[i] = 0
+    return priorities
+------------------------------------------------------
+Score        : -212.8
+Sample time  : 2.6203958988189697
+Evaluate time: 1.6960017681121826
+Sample orders: 14
+======================================================
+
+
+INFO:absl:Best score of island 2 increased to -212.0
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 0.587782621383667
+Evaluate time: 1.5658342838287354
+Sample orders: 15
+======================================================
+
+
+INFO:absl:Best score of island 6 increased to -212.0
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 0.5712888240814209
+Evaluate time: 1.4793384075164795
+Sample orders: 16
+======================================================
+
+
+INFO:absl:Best score of island 5 increased to -212.0
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 0.570347785949707
+Evaluate time: 1.5011265277862549
+Sample orders: 17
+======================================================
+
+
+INFO:absl:Best score of island 9 increased to -212.8
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    # noqa: D205
+    priorities = np.zeros_like(bins)
+    for i, bin in enumerate(bins):
+        if bin > item:
+            priorities[i] = -np.log(bin / item)
+        else:
+            priorities[i] = 0
+    return priorities
+------------------------------------------------------
+Score        : -212.8
+Sample time  : 2.2573318481445312
+Evaluate time: 1.6399476528167725
+Sample orders: 18
+======================================================
+
+
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 2.288925886154175
+Evaluate time: 1.4484667778015137
+Sample orders: 19
+======================================================
+
+
+INFO:absl:Best score of island 0 increased to -212.0
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 0.5839560031890869
+Evaluate time: 1.4738290309906006
+Sample orders: 20
+======================================================
+
+
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 2.0488293170928955
+Evaluate time: 1.432765245437622
+Sample orders: 21
+======================================================
+
+
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 2.1060805320739746
+Evaluate time: 1.4727787971496582
+Sample orders: 22
+======================================================
+
+
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 2.15462064743042
+Evaluate time: 1.415055513381958
+Sample orders: 23
+======================================================
+
+
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 1.9549310207366943
+Evaluate time: 1.4855339527130127
+Sample orders: 24
+======================================================
+
+
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 1.9375154972076416
+Evaluate time: 1.5039260387420654
+Sample orders: 25
+======================================================
+
+
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 1.9347634315490723
+Evaluate time: 1.4060826301574707
+Sample orders: 26
+======================================================
+
+
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 2.036506175994873
+Evaluate time: 1.426826000213623
+Sample orders: 27
+======================================================
+
+
+INFO:absl:Best score of island 9 increased to -212.0
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 0.5761468410491943
+Evaluate time: 1.4646263122558594
+Sample orders: 28
+======================================================
+
+
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 1.943605899810791
+Evaluate time: 1.4557814598083496
+Sample orders: 29
+======================================================
+
+
+INFO:absl:Best score of island 4 increased to -212.0
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 0.5682728290557861
+Evaluate time: 1.407930850982666
+Sample orders: 30
+======================================================
+
+
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 1.972904920578003
+Evaluate time: 1.4643006324768066
+Sample orders: 31
+======================================================
+
+
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 1.9828004837036133
+Evaluate time: 1.4380788803100586
+Sample orders: 32
+======================================================
+
+
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 2.0632998943328857
+Evaluate time: 1.4272425174713135
+Sample orders: 33
+======================================================
+
+
+INFO:absl:Best score of island 3 increased to -212.8
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    # noqa: D205
+    priorities = np.zeros_like(bins)
+    for i, bin in enumerate(bins):
+        if bin > item:
+            priorities[i] = -np.log(bin / item)
+        else:
+            priorities[i] = 0
+    return priorities
+------------------------------------------------------
+Score        : -212.8
+Sample time  : 2.596018075942993
+Evaluate time: 1.8235211372375488
+Sample orders: 34
+======================================================
+
+
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 1.987537145614624
+Evaluate time: 1.5725953578948975
+Sample orders: 35
+======================================================
+
+
+INFO:absl:Best score of island 3 increased to -212.0
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 0.5777764320373535
+Evaluate time: 1.596573829650879
+Sample orders: 36
+======================================================
+
+
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 2.102494478225708
+Evaluate time: 1.4267008304595947
+Sample orders: 37
+======================================================
+
+
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 1.9430432319641113
+Evaluate time: 1.5721018314361572
+Sample orders: 38
+======================================================
+
+
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 1.9278652667999268
+Evaluate time: 1.4216885566711426
+Sample orders: 39
+======================================================
+
+
+================= Evaluated Function =================
+def priority(item: float, bins: np.ndarray) -> np.ndarray:
+    """Returns priority with which we want to add item to each bin.
+
+    Args:
+        item: Size of item to be added to the bin.
+        bins: Array of capacities for each bin.
+
+    Return:
+        Array of same size as bins with priority score of each bin.
+    """
+    return -np.abs(bins - item)
+------------------------------------------------------
+Score        : -212.0
+Sample time  : 1.9309563636779785
+Evaluate time: 1.568216323852539
+Sample orders: 40
+======================================================
+
+
